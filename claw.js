@@ -239,18 +239,51 @@ async function cmdDemo() {
   }
 
   const successful = results.filter(r => r.ok).length;
-  const authRequired = results.filter(r => r.error?.includes('AUTH')).length;
+  const authRequired = results.filter(r => r.error?.includes('AUTH') || r.error?.includes('Insufficient credits')).length;
+  const walletsProfiled = new Set(results.filter(r => r.cmd?.includes('profiler labels')).map(r => r.cmd)).size;
+
+  // Extract key signals from raw data
+  const keySignals = [];
+  for (const r of results) {
+    if (r.data && typeof r.data === 'string') {
+      try {
+        const parsed = JSON.parse(r.data);
+        // Look for smart money labels
+        const labels = parsed.labels || parsed.smart_labels || parsed.smartLabels || [];
+        if (labels.length > 0) {
+          const signal = labels.slice(0, 2).map(l => l.label || l.name || l).join(', ');
+          if (signal && signal !== 'unknown') keySignals.push(signal);
+        }
+        // Look for netflow data
+        if (parsed.netflow || parsed.flow || parsed.capital_flows) {
+          const flow = parsed.netflow || parsed.flow || parsed.capital_flows;
+          if (flow && flow !== 0) keySignals.push(`Netflow: ${flow > 0 ? '+' : ''}${flow}`);
+        }
+      } catch { /* not JSON */ }
+    }
+  }
 
   console.log(`\n${'─'.repeat(60)}`);
   bold(`\nDemo complete: ${callCount} calls attempted, ${successful} returned data`);
   if (authRequired > 0) {
-    dim(`(${authRequired} calls need API key — run: nansen login --api-key <YOUR_KEY>)`);
+    dim(`(${authRequired} calls need API credits — upgrade for Smart Money / agent access)`);
   }
 
-  saveRun({ results, timestamp: new Date().toISOString(), totalCalls: callCount, successful });
-  await generateReport({ results, totalCalls: callCount, successful, authRequired });
+  // JSON summary (machine-readable, challenge requirement)
+  const summary = {
+    walletsProfiled,
+    keySignals: keySignals.slice(0, 5),
+    nansenCallsMade: callCount,
+    successful,
+    timestamp: new Date().toISOString(),
+  };
+  console.log('\n📦 JSON Summary:');
+  console.log(JSON.stringify(summary, null, 2));
 
-  return results;
+  saveRun({ results, timestamp: new Date().toISOString(), totalCalls: callCount, successful, ...summary });
+  await generateReport({ results, totalCalls: callCount, successful, authRequired, walletsProfiled, keySignals: summary.keySignals });
+
+  return summary;
 }
 
 async function cmdReport() {

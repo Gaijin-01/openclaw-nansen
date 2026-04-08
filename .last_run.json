@@ -3,104 +3,98 @@
     {
       "call": 0,
       "cmd": "smart-money netflow [ethereum]",
-      "error": "{\"success\":false,\"error\":\"No API key configured. Two ways to authenticate:\\n  1. API key: nansen login --api-key <key> (get key at https://app.nansen.ai/auth/agent-setup)\\n  2. x402 micropayment: nans",
+      "error": "{\"success\":false,\"error\":\"Insufficient credits. No retry will help. Check your Nansen dashboard for credit balance.\",\"code\":\"CREDITS_EXHAUSTED\",\"status\":403,\"details\":{\"error\":\"Insufficient credits\",\"",
       "ok": false
     },
     {
       "call": 1,
       "cmd": "smart-money holdings [ethereum]",
-      "data": "{\"success\":false,\"error\":\"No API key configured. Two ways to authenticate:\\n  1. API key: nansen login --api-key <key> (get key at https://app.nansen.ai/auth/agent-setup)\\n  2. x402 micropayment: nansen wallet create + fund with USDC (no API key needed)\",\"code\":\"PAYMENT_REQUIRED\",\"status\":402,\"details\":{\"error\":\"Payment Required\",\"detail\":\"This endpoint requires payment via the x402 protocol. Include a Payment-Signature header with a valid x402 payment payload.\",\"docs\":\"https://www.x402.org/\",\"attempt\":1,\"retryAfterMs\":null}}",
+      "data": "{\"success\":false,\"error\":\"Insufficient credits. No retry will help. Check your Nansen dashboard for credit balance.\",\"code\":\"CREDITS_EXHAUSTED\",\"status\":403,\"details\":{\"error\":\"Insufficient credits\",\"detail\":\"Insufficient credits remaining to call this endpoint.\",\"attempt\":1,\"retryAfterMs\":null}}",
       "ok": true
     },
     {
       "call": 2,
       "cmd": "smart-money netflow [solana]",
-      "error": "{\"success\":false,\"error\":\"No API key configured. Two ways to authenticate:\\n  1. API key: nansen login --api-key <key> (get key at https://app.nansen.ai/auth/agent-setup)\\n  2. x402 micropayment: nans",
+      "error": "{\"success\":false,\"error\":\"Insufficient credits. No retry will help. Check your Nansen dashboard for credit balance.\",\"code\":\"CREDITS_EXHAUSTED\",\"status\":403,\"details\":{\"error\":\"Insufficient credits\",\"",
       "ok": false
     },
     {
       "call": 3,
       "cmd": "smart-money holdings [solana]",
-      "data": "{\"success\":false,\"error\":\"No API key configured. Two ways to authenticate:\\n  1. API key: nansen login --api-key <key> (get key at https://app.nansen.ai/auth/agent-setup)\\n  2. x402 micropayment: nansen wallet create + fund with USDC (no API key needed)\",\"code\":\"PAYMENT_REQUIRED\",\"status\":402,\"details\":{\"error\":\"Payment Required\",\"detail\":\"This endpoint requires payment via the x402 protocol. Include a Payment-Signature header with a valid x402 payment payload.\",\"docs\":\"https://www.x402.org/\",\"attempt\":1,\"retryAfterMs\":null}}",
+      "data": "{\"success\":false,\"error\":\"Insufficient credits. No retry will help. Check your Nansen dashboard for credit balance.\",\"code\":\"CREDITS_EXHAUSTED\",\"status\":403,\"details\":{\"error\":\"Insufficient credits\",\"detail\":\"Insufficient credits remaining to call this endpoint.\",\"attempt\":1,\"retryAfterMs\":null}}",
       "ok": true
     },
     {
       "call": 4,
       "cmd": "smart-money netflow [base]",
-      "error": "{\"success\":false,\"error\":\"No API key configured. Two ways to authenticate:\\n  1. API key: nansen login --api-key <key> (get key at https://app.nansen.ai/auth/agent-setup)\\n  2. x402 micropayment: nans",
+      "error": "{\"success\":false,\"error\":\"Insufficient credits. No retry will help. Check your Nansen dashboard for credit balance.\",\"code\":\"CREDITS_EXHAUSTED\",\"status\":403,\"details\":{\"error\":\"Insufficient credits\",\"",
       "ok": false
     },
     {
       "call": 5,
       "cmd": "smart-money holdings [base]",
-      "data": "{\"success\":false,\"error\":\"No API key configured. Two ways to authenticate:\\n  1. API key: nansen login --api-key <key> (get key at https://app.nansen.ai/auth/agent-setup)\\n  2. x402 micropayment: nansen wallet create + fund with USDC (no API key needed)\",\"code\":\"PAYMENT_REQUIRED\",\"status\":402,\"details\":{\"error\":\"Payment Required\",\"detail\":\"This endpoint requires payment via the x402 protocol. Include a Payment-Signature header with a valid x402 payment payload.\",\"docs\":\"https://www.x402.org/\",\"attempt\":1,\"retryAfterMs\":null}}",
+      "data": "{\"success\":false,\"error\":\"Insufficient credits. No retry will help. Check your Nansen dashboard for credit balance.\",\"code\":\"CREDITS_EXHAUSTED\",\"status\":403,\"details\":{\"error\":\"Insufficient credits\",\"detail\":\"Insufficient credits remaining to call this endpoint.\",\"attempt\":1,\"retryAfterMs\":null}}",
       "ok": true
     },
     {
       "call": 6,
       "cmd": "profiler labels [Vitalik.eth]",
-      "data": "{\"success\":false,\"error\":\"Not logged in. Run: nansen login\",\"code\":\"UNAUTHORIZED\",\"status\":401,\"details\":{\"message\":\"No API key found in request\",\"request_id\":\"12e2bb3a7fa8990b3e140e5531cf2a52\",\"attempt\":1,\"retryAfterMs\":null}}",
+      "data": "{\"success\":false,\"error\":\"Insufficient credits. No retry will help. Check your Nansen dashboard for credit balance.\",\"code\":\"CREDITS_EXHAUSTED\",\"status\":403,\"details\":{\"error\":\"Insufficient credits\",\"detail\":\"Insufficient credits remaining to call this endpoint.\",\"attempt\":1,\"retryAfterMs\":null}}",
       "ok": true
     },
     {
       "call": 7,
       "cmd": "profiler balance [Vitalik.eth]",
-      "data": "{\"success\":false,\"error\":\"No API key configured. Two ways to authenticate:\\n  1. API key: nansen login --api-key <key> (get key at https://app.nansen.ai/auth/agent-setup)\\n  2. x402 micropayment: nansen wallet create + fund with USDC (no API key needed)\",\"code\":\"PAYMENT_REQUIRED\",\"status\":402,\"details\":{\"error\":\"Payment Required\",\"detail\":\"This endpoint requires payment via the x402 protocol. Include a Payment-Signature header with a valid x402 payment payload.\",\"docs\":\"https://www.x402.org/\",\"attempt\":1,\"retryAfterMs\":null}}",
+      "data": "{\"success\":false,\"error\":\"Insufficient credits. No retry will help. Check your Nansen dashboard for credit balance.\",\"code\":\"CREDITS_EXHAUSTED\",\"status\":403,\"details\":{\"error\":\"Insufficient credits\",\"detail\":\"Insufficient credits remaining to call this endpoint.\",\"attempt\":1,\"retryAfterMs\":null}}",
       "ok": true
     },
     {
       "call": 8,
       "cmd": "profiler transactions [Vitalik.eth]",
-      "data": "{\"success\":false,\"error\":\"No API key configured. Two ways to authenticate:\\n  1. API key: nansen login --api-key <key> (get key at https://app.nansen.ai/auth/agent-setup)\\n  2. x402 micropayment: nansen wallet create + fund with USDC (no API key needed)\",\"code\":\"PAYMENT_REQUIRED\",\"status\":402,\"details\":{\"error\":\"Payment Required\",\"detail\":\"This endpoint requires payment via the x402 protocol. Include a Payment-Signature header with a valid x402 payment payload.\",\"docs\":\"https://www.x402.org/\",\"attempt\":1,\"retryAfterMs\":null}}",
+      "data": "{\"success\":false,\"error\":\"Insufficient credits. No retry will help. Check your Nansen dashboard for credit balance.\",\"code\":\"CREDITS_EXHAUSTED\",\"status\":403,\"details\":{\"error\":\"Insufficient credits\",\"detail\":\"Insufficient credits remaining to call this endpoint.\",\"attempt\":1,\"retryAfterMs\":null}}",
       "ok": true
     },
     {
       "call": 9,
       "cmd": "profiler labels [Binance Wallet]",
-      "data": "{\"success\":false,\"error\":\"Not logged in. Run: nansen login\",\"code\":\"UNAUTHORIZED\",\"status\":401,\"details\":{\"message\":\"No API key found in request\",\"request_id\":\"2f31637a505bef02aa1fbd0ef0564967\",\"attempt\":1,\"retryAfterMs\":null}}",
+      "data": "{\"success\":false,\"error\":\"Insufficient credits. No retry will help. Check your Nansen dashboard for credit balance.\",\"code\":\"CREDITS_EXHAUSTED\",\"status\":403,\"details\":{\"error\":\"Insufficient credits\",\"detail\":\"Insufficient credits remaining to call this endpoint.\",\"attempt\":1,\"retryAfterMs\":null}}",
       "ok": true
     },
     {
       "call": 10,
       "cmd": "profiler balance [Binance Wallet]",
-      "data": "{\"success\":false,\"error\":\"No API key configured. Two ways to authenticate:\\n  1. API key: nansen login --api-key <key> (get key at https://app.nansen.ai/auth/agent-setup)\\n  2. x402 micropayment: nansen wallet create + fund with USDC (no API key needed)\",\"code\":\"PAYMENT_REQUIRED\",\"status\":402,\"details\":{\"error\":\"Payment Required\",\"detail\":\"This endpoint requires payment via the x402 protocol. Include a Payment-Signature header with a valid x402 payment payload.\",\"docs\":\"https://www.x402.org/\",\"attempt\":1,\"retryAfterMs\":null}}",
+      "data": "{\"success\":false,\"error\":\"Insufficient credits. No retry will help. Check your Nansen dashboard for credit balance.\",\"code\":\"CREDITS_EXHAUSTED\",\"status\":403,\"details\":{\"error\":\"Insufficient credits\",\"detail\":\"Insufficient credits remaining to call this endpoint.\",\"attempt\":1,\"retryAfterMs\":null}}",
       "ok": true
     },
     {
       "call": 11,
       "cmd": "profiler transactions [Binance Wallet]",
-      "data": "{\"success\":false,\"error\":\"No API key configured. Two ways to authenticate:\\n  1. API key: nansen login --api-key <key> (get key at https://app.nansen.ai/auth/agent-setup)\\n  2. x402 micropayment: nansen wallet create + fund with USDC (no API key needed)\",\"code\":\"PAYMENT_REQUIRED\",\"status\":402,\"details\":{\"error\":\"Payment Required\",\"detail\":\"This endpoint requires payment via the x402 protocol. Include a Payment-Signature header with a valid x402 payment payload.\",\"docs\":\"https://www.x402.org/\",\"attempt\":1,\"retryAfterMs\":null}}",
+      "data": "{\"success\":false,\"error\":\"Insufficient credits. No retry will help. Check your Nansen dashboard for credit balance.\",\"code\":\"CREDITS_EXHAUSTED\",\"status\":403,\"details\":{\"error\":\"Insufficient credits\",\"detail\":\"Insufficient credits remaining to call this endpoint.\",\"attempt\":1,\"retryAfterMs\":null}}",
       "ok": true
     },
     {
       "call": 12,
       "cmd": "profiler labels [Solana Whale]",
-      "data": "{\"success\":false,\"error\":\"Not logged in. Run: nansen login\",\"code\":\"UNAUTHORIZED\",\"status\":401,\"details\":{\"message\":\"No API key found in request\",\"request_id\":\"ac47d40148503b757159d362f04b4f3f\",\"attempt\":1,\"retryAfterMs\":null}}",
+      "data": "{\"success\":false,\"error\":\"Insufficient credits. No retry will help. Check your Nansen dashboard for credit balance.\",\"code\":\"CREDITS_EXHAUSTED\",\"status\":403,\"details\":{\"error\":\"Insufficient credits\",\"detail\":\"Insufficient credits remaining to call this endpoint.\",\"attempt\":1,\"retryAfterMs\":null}}",
       "ok": true
     },
     {
       "call": 13,
       "cmd": "profiler balance [Solana Whale]",
-      "data": "{\"success\":false,\"error\":\"No API key configured. Two ways to authenticate:\\n  1. API key: nansen login --api-key <key> (get key at https://app.nansen.ai/auth/agent-setup)\\n  2. x402 micropayment: nansen wallet create + fund with USDC (no API key needed)\",\"code\":\"PAYMENT_REQUIRED\",\"status\":402,\"details\":{\"error\":\"Payment Required\",\"detail\":\"This endpoint requires payment via the x402 protocol. Include a Payment-Signature header with a valid x402 payment payload.\",\"docs\":\"https://www.x402.org/\",\"attempt\":1,\"retryAfterMs\":null}}",
+      "data": "{\"success\":false,\"error\":\"Insufficient credits. No retry will help. Check your Nansen dashboard for credit balance.\",\"code\":\"CREDITS_EXHAUSTED\",\"status\":403,\"details\":{\"error\":\"Insufficient credits\",\"detail\":\"Insufficient credits remaining to call this endpoint.\",\"attempt\":1,\"retryAfterMs\":null}}",
       "ok": true
     },
     {
       "call": 14,
       "cmd": "profiler transactions [Solana Whale]",
-      "data": "{\"success\":false,\"error\":\"No API key configured. Two ways to authenticate:\\n  1. API key: nansen login --api-key <key> (get key at https://app.nansen.ai/auth/agent-setup)\\n  2. x402 micropayment: nansen wallet create + fund with USDC (no API key needed)\",\"code\":\"PAYMENT_REQUIRED\",\"status\":402,\"details\":{\"error\":\"Payment Required\",\"detail\":\"This endpoint requires payment via the x402 protocol. Include a Payment-Signature header with a valid x402 payment payload.\",\"docs\":\"https://www.x402.org/\",\"attempt\":1,\"retryAfterMs\":null}}",
-      "ok": true
-    },
-    {
-      "call": 15,
-      "cmd": "nansen agent (fast)",
-      "data": {
-        "_error": "AUTH_REQUIRED",
-        "message": "API key required. Run: nansen login --api-key <KEY>"
-      },
+      "data": "{\"success\":false,\"error\":\"Insufficient credits. No retry will help. Check your Nansen dashboard for credit balance.\",\"code\":\"CREDITS_EXHAUSTED\",\"status\":403,\"details\":{\"error\":\"Insufficient credits\",\"detail\":\"Insufficient credits remaining to call this endpoint.\",\"attempt\":1,\"retryAfterMs\":null}}",
       "ok": true
     }
   ],
-  "timestamp": "2026-04-08T14:49:03.597Z",
-  "totalCalls": 16,
-  "successful": 13
+  "timestamp": "2026-04-08T14:53:08.361Z",
+  "totalCalls": 15,
+  "successful": 12,
+  "walletsProfiled": 3,
+  "keySignals": [],
+  "nansenCallsMade": 15
 }
