@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenClaw 🦞 — Nansen Report</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0a0a0f; color: #e0e0e0; font-family: 'Courier New', monospace; min-height: 100vh; padding: 2rem; }
+  .container { max-width: 1100px; margin: 0 auto; }
+  h1 { color: #ff6b35; font-size: 2rem; margin-bottom: 0.25rem; }
+  .subtitle { color: #888; font-size: 0.85rem; margin-bottom: 2rem; }
+  .badge-row { display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; }
+  .badge { background: #1a1a2e; border: 1px solid #333; padding: 0.5rem 1rem; border-radius: 6px; }
+  .badge .val { color: #ff6b35; font-size: 1.4rem; font-weight: bold; }
+  .badge .lbl { color: #666; font-size: 0.7rem; text-transform: uppercase; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+  th { background: #1a1a2e; color: #ff6b35; padding: 0.6rem 0.8rem; text-align: left; border-bottom: 2px solid #333; }
+  td { padding: 0.5rem 0.8rem; border-bottom: 1px solid #1a1a2e; vertical-align: top; }
+  tr:hover td { background: #111118; }
+  pre { white-space: pre-wrap; word-break: break-all; color: #aaa; font-size: 0.7rem; line-height: 1.4; max-height: 80px; overflow: hidden; }
+  code { color: #4fc3f7; }
+  .✅ { color: #4caf50; } .❌ { color: #f44336; } .🔒 { color: #ff9800; }
+  .footer { margin-top: 3rem; color: #444; font-size: 0.7rem; text-align: center; }
+  .cmd { color: #81d4fa; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>🦞 OpenClaw — Nansen Report</h1>
+  <p class="subtitle">Generated Wed, 08 Apr 2026 14:49:03 GMT · #NansenCLI Challenge</p>
+  
+  <div class="badge-row">
+    <div class="badge"><div class="val">16</div><div class="lbl">Total Calls</div></div>
+    <div class="badge"><div class="val">13</div><div class="lbl">Successful</div></div>
+    <div class="badge"><div class="val">0</div><div class="lbl">Need API Key</div></div>
+    
+    
+  </div>
+
+  <table>
+    <thead><tr><th>Status</th><th>Command</th><th>Output (truncated)</th></tr></thead>
+    <tbody>
+    <tr>
+      <td>🔒 AUTH</td>
+      <td><code>smart-money netflow [ethereum]</code></td>
+      <td><pre>{"success":false,"error":"No API key configured. Two ways to authenticate:\n  1. API key: nansen login --api-key &lt;key&gt; (get key at https://app.nansen.…</pre></td>
+    </tr>
+    <tr>
+      <td>✅</td>
+      <td><code>smart-money holdings [ethereum]</code></td>
+      <td><pre>"{\"success\":false,\"error\":\"No API key configured. Two ways to authenticate:\\n  1. API key: nansen login --api-key …</pre></td>
+    </tr>
+    <tr>
+      <td>🔒 AUTH</td>
+      <td><code>smart-money netflow [solana]</code></td>
+      <td><pre>{"success":false,"error":"No API key configured. Two ways to authenticate:\n  1. API key: nansen login --api-key &lt;key&gt; (get key at https://app.nansen.…</pre></td>
+    </tr>
+    <tr>
+      <td>✅</td>
+      <td><code>smart-money holdings [solana]</code></td>
+      <td><pre>"{\"success\":false,\"error\":\"No API key configured. Two ways to authenticate:\\n  1. API key: nansen login --api-key …</pre></td>
+    </tr>
+    <tr>
+      <td>🔒 AUTH</td>
+      <td><code>smart-money netflow [base]</code></td>
+      <td><pre>{"success":false,"error":"No API key configured. Two ways to authenticate:\n  1. API key: nansen login --api-key &lt;key&gt; (get key at https://app.nansen.…</pre></td>
+    </tr>
+    <tr>
+      <td>✅</td>
+      <td><code>smart-money holdings [base]</code></td>
+      <td><pre>"{\"success\":false,\"error\":\"No API key configured. Two ways to authenticate:\\n  1. API key: nansen login --api-key …</pre></td>
+    </tr>
+    <tr>
+      <td>✅</td>
+      <td><code>profiler labels [Vitalik.eth]</code></td>
+      <td><pre>"{\"success\":false,\"error\":\"Not logged in. Run: nansen login\",\"code\":\"UNAUTHORIZED\",\"status\":401,\"details\":…</pre></td>
+    </tr>
+    <tr>
+      <td>✅</td>
+      <td><code>profiler balance [Vitalik.eth]</code></td>
+      <td><pre>"{\"success\":false,\"error\":\"No API key configured. Two ways to authenticate:\\n  1. API key: nansen login --api-key …</pre></td>
+    </tr>
+    <tr>
+      <td>✅</td>
+      <td><code>profiler transactions [Vitalik.eth]</code></td>
+      <td><pre>"{\"success\":false,\"error\":\"No API key configured. Two ways to authenticate:\\n  1. API key: nansen login --api-key …</pre></td>
+    </tr>
+    <tr>
+      <td>✅</td>
+      <td><code>profiler labels [Binance Wallet]</code></td>
+      <td><pre>"{\"success\":false,\"error\":\"Not logged in. Run: nansen login\",\"code\":\"UNAUTHORIZED\",\"status\":401,\"details\":…</pre></td>
+    </tr>
+    <tr>
+      <td>✅</td>
+      <td><code>profiler balance [Binance Wallet]</code></td>
+      <td><pre>"{\"success\":false,\"error\":\"No API key configured. Two ways to authenticate:\\n  1. API key: nansen login --api-key …</pre></td>
+    </tr>
+    <tr>
+      <td>✅</td>
+      <td><code>profiler transactions [Binance Wallet]</code></td>
+      <td><pre>"{\"success\":false,\"error\":\"No API key configured. Two ways to authenticate:\\n  1. API key: nansen login --api-key …</pre></td>
+    </tr>
+    <tr>
+      <td>✅</td>
+      <td><code>profiler labels [Solana Whale]</code></td>
+      <td><pre>"{\"success\":false,\"error\":\"Not logged in. Run: nansen login\",\"code\":\"UNAUTHORIZED\",\"status\":401,\"details\":…</pre></td>
+    </tr>
+    <tr>
+      <td>✅</td>
+      <td><code>profiler balance [Solana Whale]</code></td>
+      <td><pre>"{\"success\":false,\"error\":\"No API key configured. Two ways to authenticate:\\n  1. API key: nansen login --api-key …</pre></td>
+    </tr>
+    <tr>
+      <td>✅</td>
+      <td><code>profiler transactions [Solana Whale]</code></td>
+      <td><pre>"{\"success\":false,\"error\":\"No API key configured. Two ways to authenticate:\\n  1. API key: nansen login --api-key …</pre></td>
+    </tr>
+    <tr>
+      <td>✅</td>
+      <td><code>nansen agent (fast)</code></td>
+      <td><pre>API key required. Run: nansen login --api-key &lt;KEY&gt;</pre></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    OpenClaw 🦞 — Agentic intelligence that spreads out · Built with nansen-cli · #NansenCLI
+  </div>
+</div>
+</body>
+</html>

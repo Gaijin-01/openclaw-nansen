@@ -1,0 +1,35 @@
+{
+  "name": "openclaw-nansen",
+  "version": "1.0.0",
+  "description": "OpenClaw 🦞 — Nansen-powered on-chain intelligence. Agentic CLI for Smart Money flows, wallet profiling, and token research.",
+  "main": "claw.js",
+  "type": "module",
+  "bin": {
+    "claw": "./claw.js"
+  },
+  "scripts": {
+    "start": "node claw.js",
+    "demo": "node claw.js demo",
+    "monitor": "node claw.js monitor --chain base --minutes 30",
+    "report": "node claw.js report"
+  },
+  "keywords": [
+    "nansen",
+    "openclaw",
+    "smart-money",
+    "on-chain",
+    "cli",
+    "crypto",
+    "blockchain",
+    "agentic"
+  ],
+  "author": "Eva-00",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cli-table3": "^0.6.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
