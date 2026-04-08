@@ -42,7 +42,7 @@ nansen login --api-key <YOUR_NANSEN_API_KEY>
 ### 2. Clone & run
 
 ```bash
-git clone https://github.com/wner/openclaw-nansen.git
+git clone https://github.com/Gaijin-01/openclaw-nansen.git
 cd openclaw-nansen
 npm install   # tiny wrapper deps only
 
